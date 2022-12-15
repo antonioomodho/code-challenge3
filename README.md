@@ -12,7 +12,7 @@ npm install json-server --dev
 ```
 run command below to serve database
 ```shell
-json-server --watch db.json 
+json-server --watch db.json --port 3000
 ```
 Open html file on the browser to view project
 
