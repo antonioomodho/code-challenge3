@@ -22,3 +22,10 @@ Open html file on the browser to view project
 - index.html -  to view project in the browser.
 - index.js -the code that runs the files
 - index.css - styling html
+# Authors
+
+- [@antonioomodho](https://www.github.com/antonioomodho)
+
+# License
+
+[MIT](https://choosealicense.com/licenses/mit/)
