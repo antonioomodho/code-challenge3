@@ -1,6 +1,6 @@
-    const base_url = `https://antonioomodho.github.io/code-challenge3/db.json`
+    const base_url = "https://antonioomodho.github.io/code-challenge3/db.json"
     //const base_url = "http://localhost:3000";
-    const film_endpoint = `${base_url}/films`;
+    const film_endpoint = `${base_url}`;
 // create an empty json object to hold films
 
     let films = {};
@@ -11,7 +11,7 @@
     fetch(film_endpoint)
         .then(res=>res.json())
         .then(res=> {
-            films = res;
+            films = res["films"];
 // call this function to load film details.. And append data to right div.
 
             load_film_details(1)
