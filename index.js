@@ -34,9 +34,11 @@
 }
 
     function load_film_details(id){
-    fetch(`${film_endpoint}/${id}`)
+    fetch(`${film_endpoint}`)
         .then(res=>res.json())
-        .then(res=> {
+        .then(re=> {
+
+            const res = re[id];
 
             const ticket_available = res.capacity - res.tickets_sold
 
