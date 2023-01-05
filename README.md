@@ -22,6 +22,10 @@ Open html file on the browser to view project
 - index.html -  to view project in the browser.
 - index.js -the code that runs the files
 - index.css - styling html
+# Live link to code
+
+https://antonioomodho.github.io/code-challenge3/
+
 # Authors
 
 - [@antonioomodho](https://www.github.com/antonioomodho)
