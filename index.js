@@ -38,7 +38,7 @@
         .then(res=>res.json())
         .then(re=> {
 
-            const rces = re['films'][id];
+            const res = re['films'][id];
 
             const ticket_available = res.capacity - res.tickets_sold
 
