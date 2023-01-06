@@ -12,7 +12,6 @@
         .then(res=>res.json())
         .then(re=> {
             const res      = re['films']
-            films = res["films"];
 // call this function to load film details.. And append data to right div.
 
             load_film_details(1)
@@ -21,7 +20,7 @@
 
             for (let i=0; i<res.length;i++){
 
-                const film = films[i];
+                const film = res[i];
 //added a load_film_details function to onclick event to load details and append to the right div
 
                 html += "<li onclick='load_film_details("+film.id+")'>"+film.title+"</li>"
@@ -39,7 +38,7 @@
         .then(res=>res.json())
         .then(re=> {
 
-            const res = re['films'][id];
+            const rces = re['films'][id];
 
             const ticket_available = res.capacity - res.tickets_sold
 
