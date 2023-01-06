@@ -10,7 +10,8 @@
     function load_films(){
     fetch(film_endpoint)
         .then(res=>res.json())
-        .then(res=> {
+        .then(re=> {
+            const res      = re['films']
             films = res["films"];
 // call this function to load film details.. And append data to right div.
 
